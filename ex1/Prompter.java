@@ -14,7 +14,8 @@ public class Prompter {
 		return game.applyGuess(guess);
 	}
 	public void displayProgress(){
-		System.out.printf("Try ro solve:  %s%n", 
+		System.out.printf("You have %d tries left to solve :  %s%n",
+						  game.getRemainingTries(),
 						  game.getCurrentProgress());
 		
 	}
